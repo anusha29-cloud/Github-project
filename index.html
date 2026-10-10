@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusha | Personal Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0d1117;
+            color: #f0f6fc;
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 20px 8%;
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav h2 {
+            color: #3fb950;
+        }
+
+        nav a {
+            color: #f0f6fc;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        nav a:hover {
+            color: #3fb950;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px 45px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #3fb950;
+        }
+
+        .hero h3 {
+            color: #8b949e;
+            font-weight: normal;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 18px auto;
+            color: #c9d1d9;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 11px 22px;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+
+        .button:hover {
+            background: #2ea043;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            padding: 30px 0;
+        }
+
+        section h2 {
+            color: #3fb950;
+            margin-bottom: 18px;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+        }
+
+        .card p, .about p {
+            color: #c9d1d9;
+        }
+
+        .meme-section {
+            text-align: center;
+        }
+
+        .meme-section p {
+            color: #8b949e;
+            margin-bottom: 20px;
+        }
+
+        .meme-image {
+            display: block;
+            width: 100%;
+            max-width: 750px;
+            height: auto;
+            margin: 0 auto;
+            border: 2px solid #238636;
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 35px;
+            background: #161b22;
+            color: #8b949e;
+            border-top: 1px solid #30363d;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .container {
+                width: 92%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>Anusha.</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#meme">Meme</a>
+        </div>
+    </nav>
+</header>
+
+<!-- Introduction -->
+<div class="hero">
+    <h1>Hello, I'm <span>Anusha!</span></h1>
+    <h3>Computer Science and Engineering Student</h3>
+
+    <p>
+        I am a second-year CSE student at KPR Institute of
+        Engineering and Technology, Coimbatore. I enjoy learning
+        programming, building websites, exploring AI, and creating
+        innovative projects.
+    </p>
+
+    <a href="#about" class="button">Explore My Portfolio</a>
+</div>
+
+<main class="container">
+
+    <!-- About Me -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am passionate about technology and software development.
+            I enjoy learning new skills, solving problems, and turning
+            creative ideas into practical projects. My goal is to become
+            a software developer and continue improving my technical skills.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="card">
+                <h3>💻 Programming</h3>
+                <p>C, Python Basics, Java Basics, JavaScript</p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Web Development</h3>
+                <p>HTML, CSS, Basic Website Design</p>
+            </div>
+
+            <div class="card">
+                <h3>📊 Data Visualization</h3>
+                <p>Power BI and Python Visualization Libraries</p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 AI and ML</h3>
+                <p>Exploring Artificial Intelligence and Machine Learning</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+                <p>A website to introduce myself, my skills, and my projects.</p>
+            </div>
+
+            <div class="card">
+                <h3>Third Eye Wearable</h3>
+                <p>An assistive wearable concept for obstacle and sound alerts.</p>
+            </div>
+
+            <div class="card">
+                <h3>AI/ML Research</h3>
+                <p>Studying image robustness using lightweight CNN models.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meme Image Below Portfolio -->
+    <section id="meme" class="meme-section">
+        <h2>My GitHub Meme Corner 😂</h2>
+
+        <p>
+            KPRIET × IEEE — GitHub Meme Fest
+            <br>
+            Code. Commit. Comedy!
+        </p>
+
+        <img
+            src="github-meme.png"
+            alt="KPRIET and IEEE GitHub meme featuring a coding cat"
+            class="meme-image"
+        >
+    </section>
+
+</main>
+
+<footer>
+    <p>Designed by Anusha | Learning, Creating and Growing 💚</p>
+    <p>© 2026 Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
